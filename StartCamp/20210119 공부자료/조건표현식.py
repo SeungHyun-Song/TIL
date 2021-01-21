@@ -1,4 +1,4 @@
-temp = 37.5
+temp = float(input('temp = '))
 if temp >= 37.5:
     result = '입실 불가'
 else:
