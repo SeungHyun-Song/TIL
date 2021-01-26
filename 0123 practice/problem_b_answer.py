@@ -4,9 +4,9 @@ from pprint import pprint
 
 def movie_info(movie, genres):
     # movie에 있는 genre_ids 를 genres에 있는 genre_names로 바꿔야한다.
-    result = {}
+    result = {}      # result 초기화
 
-    genre_ids = movie['genre_ids']
+    genre_ids = movie['genre_ids'] # movie['genre_ids']를 바꿔주기위해 다른 변수로
     convert = {}
 
     for i in genres:

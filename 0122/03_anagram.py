@@ -9,13 +9,23 @@
 [입력 예시]
 ohlamesaint themonalisa
 
-[출력 예시]
+[출력 예시]z
 True
 '''
 
-def check_anagram(text1, text2):
-    pass
+# def check_anagram(text1, text2):
+#     return sorted(text1) == sorted(text2)
 
+def check_anagram(text1, text2):
+    count = {}  # dictionary를 사용해보자. by google
+
+    for x in text1:
+        count[x] = count.get(x, 0) + 1
+    
+    for x in text2:
+        count[x] = count.get(x, 0) - 1
+
+    return all(n == 0 for n in count.values())
 
 if __name__ == '__main__':
     print(check_anagram('ohlamesaint', 'themonalisa'))  #=> T

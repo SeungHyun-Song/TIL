@@ -18,12 +18,30 @@ def mul_with_for(numbers):
 
 
 # while문만 사용하여 풀기
+# def mul_with_while(numbers):
+#     total = 1
+#     i = 1
+#     while i <= len(numbers):
+#         total = total * i
+#         i += 1
+#     return total
+    
 def mul_with_while(numbers):
     total = 1
-    while num > 0:
-        total = total * num
-        num = num - 1
+    i = 0
+    while i < len(numbers):
+        total = total * numbers[i]
+        i += 1
     return total
+
+
+# def mul_with_while(numbers):
+#     total = 1
+#     global num
+#     while num > 0:
+#         total = total * num
+#         num = num - 1
+#     return total
 
 # 아래 코드는 바꾸지 않습니다.
 if __name__ == '__main__':
