@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      color : red;
+    }
+
+    /* 요소 선택자 */
+    h2 {
+      color : orange;
+    }
+
+    h3, h4 {
+      font-size: 10px;
+    }
+
+    /*
+      클래스 선택자
+      마침표(.) 문자로 시작하여 해당 클래스가 적용된
+      문서의 모든 항목을 선택한다.
+    
+      <div class="green"></div>
+
+      /green {
+
+      }
+    */
+    .green {
+      color: green;
+    }
+
+    /*
+      id 선택자
+      # 문자로 시작하며, 기본적으로 클래스 선택자와 같은
+      방식으로 사용한다.
+
+      ID는 문서에서 단 한 번만 사용할 수 있으며,
+      요소에는 단일 ID값만 적용할 수 있다.
+    */
+    #purple {
+      color : purple;
+    }
+
+    /* 자식 결합자 : 바로 아래 태그만 선택 */
+    .box > p {
+      font-size: 30px;
+    }
+
+    /* 자손 결합자 : 아래 태그 전부 선택*/
+    .box p {
+      color: blue;
+    }
+
+  </style>
+</head>
+<body>
+  <h1 class="green">SSAFY</h1>
+  <h2>선택자 연습</h2>
+  <div class="green box"> <!-- 띄어쓰기로 클래스를 구분한다.
+                               green이라는 클래스와 box라는 클래스 -->
+    box contents
+    <div>
+      <p>지역 목록</p>
+      <ul>
+        <li>서울</li>
+        <li id="purple">인천</li> <!-- id는 무조건 하나만 존재 ㅋ-->
+        <li>강원</li>
+        <li>경기</li>
+      </ul>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <h3>HELLO</h3>
+  <h4>CSS</h4>
+</body>
+</html>
