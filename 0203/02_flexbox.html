@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="stylesheet" href="02_flexbox.css">
+  <title>Document</title>
+  <style>
+    .flex-container {
+      /* 정렬하려는 부모 요소에 선언 */
+      display: flex;
+      /* display: inline-flex; */
+
+      /* 요소들이 강제로 한 줄에 배치되게 할 것인지를 설정 */
+      /* flex-wrap: nowrap; 모든 요소를 한 줄에 정렬 */
+      flex-wrap: wrap; /* 요소들을 여러 줄에 정렬 */
+      /* flex-wrap: wrap-reverse; */ /* 요소들을 여러 줄에 걸쳐 반대로 정렬 */
+
+      /* 메인축 방향 설정, 쌓이는 방향 설정 (메인축의 방향만 바뀜)*/
+      flex-direction: row; /* 왼쪽부터 */
+      /* flex-direction: row-reverse; */ /* 오른쪽부터 */
+      /* flex-direction: column; */ /* 위에서부터 */
+      /* flex-direction: column-reverse; 아래서부터 */
+
+      /* flex-direction과 flex-wrap의 복합표현 */
+      /* flex-flow: column wrap; /*
+
+      /* 메인축 정렬 */
+      justify-content: flex-start;
+      /* justify-content: flex-end;
+      justify-content: center;
+      justify-content: space-between;
+      justify-content: space-around;
+      justify-content: space-evenly; */
+
+      /* 교차축 정렬 */
+      /* align-items: stretch;
+      align-items: flex-start;
+      align-items: flex-end;
+      align-items: center;
+      align-items: baseline; */
+    }
+
+    .item1 {
+      /* aligh-self: flex-start; */
+      order: 0; /* 기본값 */
+      /* 주축에서 남는 공간을 항목들에게 분배 */
+      flex-grow: 1;
+    }
+
+    .item2 {
+      /* align-self: center; */
+      /* order: -1; */
+      flex-grow: 2;
+    }
+
+    .item3 {
+      /* align-self: flex-end; */
+      /* order: 1; */
+    }
+  </style>
+</head>
+<body>
+  <div class="base">
+    <h2>Flex</h2>
+    <hr>
+    <div class="box flex-container">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+      <!-- <div class="item5">5</div>
+      <div class="item6">6</div>
+      <div class="item7">7</div>
+      <div class="item8">8</div>
+      <div class="item9">9</div>
+      <div class="item10">10</div>
+      <div class="item11">11</div>
+      <div class="item12">12</div>
+      <div class="item13">13</div>
+      <div class="item14">14</div>
+      <div class="item15">15</div>
+      <div class="item16">16</div>
+      <div class="item17">17</div>
+      <div class="item18">18</div>
+      <div class="item19">19</div>
+      <div class="item20">20</div>
+      <div class="item21">21</div>
+      <div class="item22">22</div>
+      <div class="item23">23</div>
+      <div class="item24">24</div> -->
+      <!-- <div class="item25">25</div>
+      <div class="item26">26</div>
+      <div class="item27">27</div>
+      <div class="item28">28</div> -->
+    </div>
+  </div>
+</body>
+
+</html>
