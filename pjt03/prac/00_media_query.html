@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    /* @media print {
+      body {
+        font-size: 12pt;
+        color: red;
+      }
+    } */
+    /* @media (max-width: 600px) {
+      body {
+        color: red;
+      }
+    } */
+    /* @media (orientation: landscape) { => 가로모드
+      body {
+        color: rebeccapurple;
+      }
+    } */
+    /* @media (min-width: 400px) and (orientation: landscape) {
+      body {
+        color: blue;
+      }
+    } */
+    div {
+      border: 2px solid black;
+      background-color: brown;
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+    }
+    @media (max-width: 576px) {
+      div {
+        width: 100%;
+      }
+    }
+    @media (max-width: 768px) and (min-width: 576px) {
+      div {
+        width: 40%;
+      }
+    }
+    @media (max-width: 1050px) and (min-width:768px) {
+      div {
+        width: 10%;
+      }
+    }
+  </style>
+  <div></div>
+  <div></div>
+
+
+
+
+
+
+
+
+
+
+
+  <h1>안녕하세요</h1>
+  
+</body>
+</html>
