@@ -1,2 +1,21 @@
 /* 03_community.css */
 /* 아래에 코드를 작성해 주세요. */
+
+body {
+  height: 3000px;
+}
+
+nav img {
+  height: 60px;
+}
+
+.main {
+  margin-top: 125px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
